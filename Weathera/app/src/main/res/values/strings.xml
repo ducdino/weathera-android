@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Weathera</string>
+
+    <string name="mint_api_key">823987c5</string>
+
+    <string name="none">None</string>
+    <string name="other">Other</string>
+    <string name="error">Error!</string>
+    <string name="unavailable">Unavailable</string>
+
+    <string name="country">COUNTRY</string>
+    <string name="city">CITY</string>
+
+    <string name="today">Today</string>
+
+    <string name="temperature">Temperature</string>
+    <string name="description">Description</string>
+    <string name="wind">Wind</string>
+    <string name="cloudiness">Cloudiness</string>
+
+    <string name="set_measure">Measure of temperature</string>
+
+    <string name="no_internet_and_cache">
+        No internet connection and the cached data is not available. Check the connection or try again later.
+    </string>
+
+    <string name="no_internet_and_actual_cache">
+        No internet connection and actual cached data. Check the connection or try again later.
+    </string>
+
+    <string name="no_internet">
+        No internet connection. Some functions are not available in offline mode, but you can see cached data.
+    </string>
+
+</resources>

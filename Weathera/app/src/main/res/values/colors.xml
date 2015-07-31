@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="main">#009688</color>
+    <color name="main_light_1">#E0F2F1</color>
+    <color name="main_light_2">#B2DFDB</color>
+
+    <color name="text_black">#444</color>
+    <color name="text_dark">#888</color>
+    <color name="text_light">#BBB</color>
+
+</resources>
