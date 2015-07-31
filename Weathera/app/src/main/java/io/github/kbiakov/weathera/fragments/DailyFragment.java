@@ -173,7 +173,7 @@ public class DailyFragment extends ForecastFragment implements SwipeRefreshLayou
     }
 
     /**
-     * Server request using Weather API provided OpenVeatnerMap. Returns the weather
+     * Server request using Weather API provided OpenWeatherMap. Returns the weather
      * for 5 days, divided into 3-hour intervals. The parameter is the location in
      * the format "%city_name%,%COUNTRY_CODE%".
      */
