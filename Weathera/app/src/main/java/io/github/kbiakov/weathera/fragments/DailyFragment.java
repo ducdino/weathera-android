@@ -259,12 +259,15 @@ public class DailyFragment extends ForecastFragment implements SwipeRefreshLayou
     }
     
     public void saveForecastCache() {
+        int countryId = spnCountry.getSelectedItemPosition();
+        int cityId = spnCity.getSelectedItemPosition();
+
         DBSaveTask dbSaveTask = new DBSaveTask(this);
         mDbSaveWeakRef = new WeakReference<>(dbSaveTask);
-        dbSaveTask.execute();
+        dbSaveTask.execute(countryId, cityId, getMeasureId());
     }
 
-    private class DBSaveTask extends AsyncTask<Void, Void, Void> {
+    private class DBSaveTask extends AsyncTask<Integer, Void, Void> {
 
         private WeakReference<DailyFragment> mFragmentWeakRef;
 
@@ -273,10 +276,11 @@ public class DailyFragment extends ForecastFragment implements SwipeRefreshLayou
         }
 
         @Override
-        protected Void doInBackground(Void... params) {
-            int countryId = spnCountry.getSelectedItemPosition();
-            int cityId = spnCity.getSelectedItemPosition();
-            mCacheManager.saveCache(mForecastList, countryId, cityId, getMeasureId());
+        protected Void doInBackground(Integer... params) {
+            int countryId = params[0];
+            int cityId = params[1];
+            int measureId = params[2];
+            mCacheManager.saveCache(mForecastList, countryId, cityId, measureId);
             return null;
         }
 
