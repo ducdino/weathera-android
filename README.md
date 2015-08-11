@@ -5,3 +5,5 @@ Android weather app using Weather API provided OpenWeatherMap. It has the next s
 &#149; tablet version <br>
 
 <br>
+
+<a href='http://postimage.org/' target='_blank'><img src='http://s18.postimg.org/nkfa21avd/2015_08_11_12_54_38.png'/></a>
