@@ -231,8 +231,9 @@ public class DailyFragment extends ForecastFragment implements SwipeRefreshLayou
 
             @Override
             protected void onPostExecute(ArrayList<Forecast> forecastList) {
-                // outdated cache
-                if (!isOnline && forecastList.size() == 0) {
+                boolean isCacheOutdated = forecastList.size() == 0;
+
+                if (!isOnline && isCacheOutdated) {
                     mCacheManager.clearCache();
                     hideRefresh();
 
@@ -249,7 +250,9 @@ public class DailyFragment extends ForecastFragment implements SwipeRefreshLayou
                 mForecastList.addAll(forecastList);
 
                 if (isOnline) {
-                    fillForecast();
+                    if (!isCacheOutdated) {
+                        fillForecast();
+                    }
                     getForecastServer();
                 } else {
                     onForecastLoaded();
