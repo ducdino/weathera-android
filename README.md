@@ -6,6 +6,6 @@ Android weather app using Weather API provided OpenWeatherMap. It has the next s
 
 <br>
 
-<a href='http://postimage.org/' target='_blank'><img src='http://s23.postimg.org/exam3zmvf/o_YWRlw_Rv_TVI.jpg'/></a>
+<a href='http://postimage.org/' target='_blank'><img src='http://s29.postimg.org/lhthg7g4n/o_YWRlw_Rv_TVI.jpg'/></a>
 
 <a href='http://postimage.org/' target='_blank'><img src='http://s18.postimg.org/nkfa21avd/2015_08_11_12_54_38.png'/></a>
