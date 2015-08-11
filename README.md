@@ -4,7 +4,7 @@ Android weather app using Weather API provided OpenWeatherMap. It has the next s
 &#149; caching to show actual forecast <br>
 &#149; tablet version <br>
 
-<br>
+<hr>
 
 <a href='http://postimage.org/' target='_blank'><img src='http://s12.postimg.org/muv8vznel/o_YWRlw_Rv_TVI.jpg'/></a>
 
