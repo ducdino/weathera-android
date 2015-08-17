@@ -401,7 +401,7 @@ public class DailyFragment extends ForecastFragment implements SwipeRefreshLayou
         int pos = 0;
 
         mDailyList.clear();
-        while (daysNum < 4) {
+        while (daysNum < (mForecastList.size() - 1) / 8) {
             if (mForecastList.get(pos).getDay() == currentDay) {
                 pos++;
                 continue;
